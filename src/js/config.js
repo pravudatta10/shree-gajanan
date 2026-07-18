@@ -18,9 +18,9 @@ export const LINKS = {
 // Add/remove an entry here and both nav bars update automatically.
 export const NAV_ITEMS = [
   { href: "#hero", label: "Home", key: "hero", icon: "home" },
+   { href: "#schedule", label: "Schedule", key: "schedule", icon: "calendar-days" },
   { href: "#connect", label: "Connect", key: "connect", icon: "compass" },
-  { href: "#about", label: "About", key: "about", icon: "landmark" },
-  { href: "#schedule", label: "Schedule", key: "schedule", icon: "calendar-days" },
+  { href: "#about", label: "About", key: "about", icon: "landmark" }, 
   { href: "#location", label: "Location", key: "location", icon: "map-pin" },
 ];
 
