@@ -1,0 +1,54 @@
+/* ============================================================
+   responsive.css — mobile-first; base rules in layout.css/
+   components.css already cover 320-412px via clamp() and single
+   -column grids. This file layers in changes for wider viewports
+   and fine-tunes the narrowest phones.
+   ============================================================ */
+
+/* ---- Narrowest phones: tighten spacing so nothing crowds ---- */
+@media (max-width: 359px) {
+  .container { padding-inline: var(--space-3); }
+  .btn-row { flex-direction: column; align-items: stretch; }
+  .grid--quick { grid-template-columns: 1fr; }
+}
+
+/* ---- 375-412px: default mobile, minor breathing room ---- */
+@media (min-width: 375px) {
+  .container { padding-inline: var(--space-4); }
+}
+
+/* ---- Tablet / small desktop: reveal top nav, retire tab bar ---- */
+@media (min-width: 768px) {
+  body { padding-bottom: 0; }
+  .tab-bar { display: none; }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+    font-size: var(--text-sm);
+    font-weight: 500;
+  }
+  .nav-links a { text-decoration: none; color: var(--text-2); transition: color var(--dur-fast) var(--ease); }
+  .nav-links a:hover, .nav-links a.is-active { color: var(--accent-2); }
+
+  .container { padding-inline: var(--space-6); }
+
+  .grid--2 { grid-template-columns: 1.1fr 1fr; gap: var(--space-7); }
+  .grid--cards { grid-template-columns: repeat(2, 1fr); gap: var(--space-5); }
+  .grid--quick { grid-template-columns: repeat(4, 1fr); }
+
+  .hero { min-height: 88svh; }
+  .hero-content { padding-inline: var(--space-7); }
+
+  .announcement { align-items: center; }
+
+  .footer-inner { flex-direction: row; align-items: flex-start; justify-content: space-between; }
+}
+
+/* ---- Desktop: roomier grids, four-up highlight cards ---- */
+@media (min-width: 1024px) {
+  .grid--cards { grid-template-columns: repeat(4, 1fr); }
+  .section { padding-block: var(--space-9); }
+  .hero-content { padding-inline: var(--space-8); max-width: 720px; }
+}

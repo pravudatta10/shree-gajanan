@@ -1,0 +1,18 @@
+{
+  "_note": "Site identity and contact information for Shree Gajanan Puja Committee.",
+  "site": {
+    "nameOdia": "ଶ୍ରୀ ଗଜାନନ ପୂଜା କମିଟି",
+    "nameEn": "Shree Gajanan Puja Committee",
+    "shortName": "SGPC",
+    "location": "Mirjapur & Paripundilo, Jagatsinghpur, Odisha, India",
+    "established": 2019,
+    "themeColorDark": "#1E1330",
+    "themeColorLight": "#FBF4E6"
+  },
+  "contact": {
+    "email": "mirzapurgajanan@gmail.com",
+    "upi": "6372771841@axl",
+    "address": "Mirjapur & Paripundilo, Tirtol, Jagatsinghpur, Odisha - 754134, India",
+    "mapsQuery": "9838+GW5, Mirzapur, Palasudha, Odisha 754134"
+  }
+} 

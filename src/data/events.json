@@ -1,0 +1,54 @@
+{
+  "_note": "Official schedule for the 8th Annual Shree Gajanan Puja Mahotsav 2026.",
+
+  "events": [
+    {
+      "id": "ganesh-puja-2026",
+      "title": "ଶ୍ରୀ ଗଣେଶ ପୂଜା",
+      "titleEn": "Shree Ganesh Puja",
+      "date": "2026-09-14",
+      "time": "10:30",
+      "endDate": "2026-09-14",
+      "endTime": "13:00",
+      "icon": "flower-2",
+      "description": "ଶୁଭ ମୁହୂର୍ତ୍ତରେ ଶ୍ରୀ ଗଣେଶ ପୂଜା ଆରମ୍ଭ।",
+      "descriptionEn": "The festival begins with the sacred worship of Lord Ganesha."
+    },
+    {
+      "id": "Prasad-2026",
+      "title": "ମହାପ୍ରସାଦ ସେବନ",
+      "titleEn": "Prasad Sevan",
+      "date": "2026-09-15",
+      "time": "12:30",
+      "endDate": "2026-09-15",
+      "endTime": "15:00",
+      "icon": "utensils",
+      "description": "ସମସ୍ତ ଭକ୍ତଙ୍କ ପାଇଁ ମହାପ୍ରସାଦ ସେବନ।",
+      "descriptionEn": "Prasad will be served to all devotees."
+    },
+    {
+      "id": "daily-dhupa-2026",
+      "title": "ସନ୍ଧ୍ୟା ଧୂପ ଓ ନାମ ସଙ୍କୀର୍ତ୍ତନ",
+      "titleEn": "Evening Dhupa & Nama Sankirtan",
+      "date": "2026-09-14",
+      "time": "18:30",
+      "endDate": "2026-09-18",
+      "endTime": "19:30",
+      "icon": "lamp",
+      "description": "ପ୍ରତିଦିନ ସନ୍ଧ୍ୟା ୬:୩୦ରେ ସନ୍ଧ୍ୟା ଧୂପ ଓ ନାମ ସଙ୍କୀର୍ତ୍ତନ।",
+      "descriptionEn": "Daily Evening Dhupa and Nama Sankirtan at 6:30 PM."
+    },
+    {
+      "id": "visarjan-2026",
+      "title": "ଶ୍ରୀ ଗଣେଶ ବିସର୍ଜନ",
+      "titleEn": "Shree Ganesh Visarjan",
+      "date": "2026-09-18",
+      "time": "18:00",
+      "endDate": "2026-09-18",
+      "endTime": "21:00",
+      "icon": "waves",
+      "description": "ଭକ୍ତି ଓ ଶ୍ରଦ୍ଧାର ସହ ଶ୍ରୀ ଗଣେଶ ବିସର୍ଜନ ଶୋଭାଯାତ୍ରା।",
+      "descriptionEn": "The grand immersion procession marking the conclusion of the Mahotsav."
+    }
+  ]
+}

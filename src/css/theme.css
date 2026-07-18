@@ -1,0 +1,151 @@
+/* ============================================================
+   theme.css — design tokens.
+   Palette: deep aubergine "pandal night" ink, sindoor vermilion,
+   marigold gold and banana-leaf green — the colours of a Ganesh
+   Puja mandap rather than a generic warm-neutral template.
+   Dark mode is the default (matches the festival's evening
+   aarti atmosphere); light mode is an explicit opt-in.
+   ============================================================ */
+
+:root {
+  /* -- raw palette -- */
+  --ink-950: #150C22;
+  --ink-900: #1E1330;
+  --ink-800: #2B1E42;
+  --ink-700: #3A2A56;
+  --cream-50: #FBF4E6;
+  --cream-100: #F3E6CC;
+  --vermilion-500: #C64B2C;
+  --vermilion-400: #DE6A45;
+  --marigold-500: #E6A23C;
+  --marigold-300: #F2C368;
+  --leaf-500: #4F7A5B;
+  --leaf-300: #83AB8E;
+  --white: #FFFFFF;
+
+  /* -- semantic tokens (dark, default) -- */
+  --bg-0: var(--ink-950);
+  --bg-1: var(--ink-900);
+  --surface: #271B3D;
+  --surface-2: #32234C;
+  --text-1: #F6EEDD;
+  --text-2: #C6B9DA;
+  --text-3: #9686B0;
+  --border: rgba(246, 238, 221, 0.12);
+  --border-strong: rgba(246, 238, 221, 0.24);
+  --accent: var(--vermilion-400);
+  --accent-2: var(--marigold-500);
+  --accent-3: var(--leaf-300);
+  --focus-ring: var(--marigold-300);
+  --shadow-color: 270 60% 4%;
+
+  /* -- type -- */
+  --font-display: "Fraunces", "Noto Sans Oriya", Georgia, serif;
+  --font-body: "Poppins", "Noto Sans Oriya", -apple-system, sans-serif;
+
+  --text-xs: clamp(0.75rem, 0.72rem + 0.15vw, 0.8125rem);
+  --text-sm: clamp(0.875rem, 0.84rem + 0.2vw, 0.9375rem);
+  --text-base: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+  --text-lg: clamp(1.125rem, 1.06rem + 0.35vw, 1.25rem);
+  --text-xl: clamp(1.375rem, 1.24rem + 0.6vw, 1.625rem);
+  --text-2xl: clamp(1.6rem, 1.35rem + 1.2vw, 2.25rem);
+  --text-3xl: clamp(2rem, 1.55rem + 2vw, 3rem);
+  --text-hero: clamp(2.5rem, 1.8rem + 3.3vw, 4.25rem);
+
+  /* -- spacing (4px base) -- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+
+  /* -- radii / shadows / motion -- */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 2px 8px hsl(var(--shadow-color) / 0.3);
+  --shadow-md: 0 8px 24px hsl(var(--shadow-color) / 0.35);
+  --shadow-lg: 0 16px 40px hsl(var(--shadow-color) / 0.4);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 160ms;
+  --dur-base: 320ms;
+  --dur-slow: 640ms;
+
+  /* -- layout -- */
+  --container-max: 1120px;
+  --header-h: 64px;
+  --tabbar-h: 64px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+[data-theme="light"] {
+  --bg-0: var(--cream-50);
+  --bg-1: var(--cream-100);
+  --surface: var(--white);
+  --surface-2: #FFFBF2;
+  --text-1: var(--ink-950);
+  --text-2: #5B4A70;
+  --text-3: #8577A0;
+  --border: rgba(30, 19, 48, 0.1);
+  --border-strong: rgba(30, 19, 48, 0.18);
+  --accent: var(--vermilion-500);
+  --accent-2: #C9861B;
+  --accent-3: var(--leaf-500);
+  --shadow-color: 270 40% 60%;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+body {
+  margin: 0;
+  background: var(--bg-0);
+  color: var(--text-1);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  transition: background var(--dur-base) var(--ease), color var(--dur-base) var(--ease);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  line-height: 1.15;
+  margin: 0 0 var(--space-3);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+h1 { font-size: var(--text-hero); }
+h2 { font-size: var(--text-3xl); }
+h3 { font-size: var(--text-lg); }
+p { margin: 0 0 var(--space-4); color: var(--text-2); }
+a { color: inherit; }
+
+.odia { font-family: "Noto Sans Oriya", var(--font-body); }
+
+:focus-visible {
+  outline: 2.5px solid var(--focus-ring);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--accent-2);
+  color: var(--ink-950);
+  padding: var(--space-3) var(--space-5);
+  z-index: 300;
+  border-radius: 0 0 var(--radius-sm) 0;
+  font-weight: 600;
+}
+.skip-link:focus { left: 0; }
