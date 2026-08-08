@@ -10,7 +10,7 @@ import { LINKS } from "../js/config.js";
 
 const ACTIONS = [
   { icon: "images", title: "Media Gallery", desc: "Every photo and video, organised by year on Google Drive.", href: LINKS.mediaDrive },
-  // { icon: "receipt", title: "Financial Reports", desc: "Transparent, year-wise collection and expense records.", href: LINKS.expenseDrive },
+  { icon: "receipt", title: "Financial Reports", desc: "Transparent, year-wise collection and expense records.", href: LINKS.expenseDrive },
   { icon: "users", title: "Committee Members", desc: "See who serves on this year's organising committee.", href: LINKS.committeeDrive },
   { icon: "handshake", title: "Coordination Team", desc: "Meet the volunteers coordinating this year's festival.", href: LINKS.coordinationDrive },
 ];
